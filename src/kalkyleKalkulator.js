@@ -34,7 +34,7 @@ function kalkyle() {
     const dekningsbidragProsent = toDecimal(dekninsgsbidragDesimal * 100)
 
 
-// Sjekker at felter er utfylt
+    // Sjekker at felter er utfylt
     if (!kostPris || !veilPris) {
 
     }
@@ -117,14 +117,14 @@ function fastKalkyle(dekningsbidragProsent) {
         <button onClick="fastKalkyle('40')" class="bg-gray-800 hover:bg-gray-900 text-white text-sm font-bold ml-1 px-1 rounded-lg">40%</button>`
 
 
-        advarselLavKalkyle(dekningsbidragProsent)
+    advarselLavKalkyle(dekningsbidragProsent)
 
 }
 // Bugfix for undefined rabatt
 function nullRabatt() {
     let letNull = ''
-    let insertRabattDom =  insertRabatt.value
-    if(insertRabattDom == '') {
+    let insertRabattDom = insertRabatt.value
+    if (insertRabattDom == '') {
         letNull = 0
         return letNull
     }
@@ -136,13 +136,13 @@ function nullRabatt() {
 }
 // Advarsel når kalkylen er under husleia
 function advarselLavKalkyle(dekningsbidragProsent) {
-     if(dekningsbidragProsent < 6.5) {
-         advarselKalkyleDom.innerText = `MERK! Dekningsbidraget er lavere enn husleien!`
-     }
-     else {
+    if (dekningsbidragProsent < 6.5) {
+        advarselKalkyleDom.innerText = `MERK! Dekningsbidraget er lavere enn kostpris! NB! Husleie 6.5%`
+    }
+    else {
         advarselKalkyleDom.innerText = ``
     }
- }
+}
 
 
 //calculateBtn.addEventListener("click", kalkyle)
