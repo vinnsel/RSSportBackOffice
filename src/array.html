@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-blue-600">
+<nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+  <span class="font-bold text-white text-xl">RS SPORT BACK OFFICE</span>
+</div>
+<div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+  <div class="text-sm sm:flex-grow">
+    <a href="kalkyleKalkulator.html" class="block mx-4 mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">Kalkylekalkulator</a>
+    <a href="pacecalculator.html" class="block mx-4 mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">Pace Calculator</a>
+    <a href="array.html" class="block mx-4 mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">Array</a>
+  </div>
+</div>
+</nav>
+  <div class="container lg:max-w-5xl mx-auto px-2 ">
+    <div class="mx-auto mt-4 flex bg-blue-200 rounded-lg shadow-xl">
+      <div class="w-full py-1 flex-wrap text-white bg-gray-800 rounded-t-lg">
+        <div class="p-2 font-bold">PRODUKTER</div>
+        </div></div>
+        <div class="mx-auto py-2 bg-blue-200 rounded-b-lg shadow-xl">
+          <div class="flex w-full">
+      </div>
+      <div class="flex w-full">
+        <div class="form-fields">
+            
+                <div class="flex pl-2 py-1">
+                    <label for="inputArtikkel" class="block w-64 mb-1">Sett inn artikkel:</label>
+                    <input type="text" id="inputArtikkel" name="inputArtikkel" user-scalable="no" class="border border-blue-300 text-sm text-center px-1 ml-2 rounded-lg focus:outline-none focus:shadow-outline focus:border-green-500" required minlength="3" maxlength="5" size="5">
+                </div>
+                <div class="flex pl-2 py-1">
+                    <label for="inputPris" class="block w-64 mb-1">Sett inn pris:</label>
+                    <input type="text" id="inputPris" name="inputPris" class="border border-blue-300 text-sm text-center px-1 ml-2 rounded-lg focus:outline-none focus:shadow-outline focus:border-green-500" required minlength="3" maxlength="5" size="5">
+                </div>  
+
+        </div>
+
+
+      </div>
+      <div class="flex p-2">
+        <div id="leggTilArtikkel">
+        <button id="inputBtn" class="flex-none mr-2 bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-lg">
+            LEGG TIL
+          </button>
+        </div>
+        <div id="slettListe">
+          <button id="emptyBtn" class="flex-none my-2 text-sm text-black font-bold ">SLETT LISTEN</button>
+      </div>
+    </div>
+
+      <div class="p-2">
+        <div id="arrayLength">
+            <p><b>VIS PRODUKTER</b></p>
+        </div>
+        <div id="results">
+            <ul id="result-list">
+
+            </ul>
+            <!-- Result - x -->
+        </div>
+        <div id="tellProdukter">
+
+        </div>
+
+    </div>
+  
+  
+ 
+      <script src="array.js"></script>
+
+      
+
+
+</div>
+
+</body>
+</html>
