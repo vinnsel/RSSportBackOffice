@@ -137,7 +137,7 @@ function nullRabatt() {
 // Advarsel når kalkylen er under husleia
 function advarselLavKalkyle(dekningsbidragProsent) {
     if (dekningsbidragProsent < 6.5) {
-        advarselKalkyleDom.innerText = `MERK! Dekningsbidraget er lavere enn kostpris! NB! Husleie 6.5%`
+        advarselKalkyleDom.innerText = `MERK! Dekningsbidraget er lavere enn kostpris! NB! Ved husleie på 6.5%`
     }
     else {
         advarselKalkyleDom.innerText = ``
